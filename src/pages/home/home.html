@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding [ngClass]="{'transparent-bg': scanInProgress}">
+   <button *ngIf="!scanInProgress" ion-button full (click)="scanQrCode()">Scan Code</button>
+</ion-content>
